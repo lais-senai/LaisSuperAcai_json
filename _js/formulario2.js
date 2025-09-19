@@ -1,6 +1,6 @@
-function jason(){
+function json(){
     var obj_form = {
-        nome: "",
+        name: "",
         idade: "",
         telefone: "",
         endereco: "",
@@ -10,10 +10,10 @@ function jason(){
         sabor: "",
         tamanho: "",
     }
-}
 
-var el_nome = document.getElementById("nome");
-obj_form.nome = el_nome.value;
+
+var el_name = document.getElementById("name");
+obj_form.name = el_name.value;
 
 var el_idade = document.getElementById("idade");
 obj_form.idade = el_idade.value;
@@ -30,15 +30,16 @@ obj_form.planeta = el_planeta.value;
 var el_raca = document.getElementById("raca");
 obj_form.raca = el_raca.value;
 
-var el_trabalho = document.querySelector('input[name="cargo": checked');
+var el_trabalho = document.getElementById("cargo");
 obj_form.trabalho = el_trabalho.value;
 
-var el_sabor = document.querySelector('input[name="sabor": checked');
+var el_sabor = document.getElementById("sabor");
 obj_form.sabor = el_sabor.value;
 
-var el_tamanho = document.querySelector('input[name="tamanho": checked');
+var el_tamanho = document.getElementById("tamanho");
 obj_form.tamanho = el_tamanho.value;
 
 var json = JSON.stringify(obj_form, null, "");
-document.write()
-document.write
+document.write("<h1>dados para json</h1>")
+document.write(json)
+}
